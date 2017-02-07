@@ -112,7 +112,7 @@ func (t *SimpleChaincode) read(stub shim.ChaincodeStubInterface, args []string) 
 	}
 
 	var returnVal string
-        returnVal = string(valAsbytes) + “ this is a test!”
-        return []byte(returnVal), nil
+	returnVal = string(valAsbytes) + " this is a test.”
+	return []byte(returnVal), nil
 	//return valAsbytes, nil
 }
